@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Scrollspy } from "@makotot/ghostui";
+// import { Scrollspy } from "@makotot/ghostui";
 import { ReactComponent as Logo } from "../../assets/logo.svg";
 
 const Header = () => {
@@ -24,7 +24,7 @@ const Header = () => {
             <Logo className="headerLogo" />
           </a>
         </div>
-        <Scrollspy
+        {/* <Scrollspy
           className="desktopMenu"
           items={["hero", "about", "projects", "contact"]}
           currentClassName="current"
@@ -42,7 +42,7 @@ const Header = () => {
           <li>
             <a href="#contact">Contact</a>
           </li>
-        </Scrollspy>
+        </Scrollspy> */}
       </div>
 
       <div className="mobileHeader">
@@ -52,7 +52,7 @@ const Header = () => {
             <Logo className="headerLogo" />
           </a>
         </div>
-        <Scrollspy
+        {/* <Scrollspy
           className={navbar ? "mobileMenu sticky" : "mobileMenu"}
           items={["hero", "about", "projects", "contact"]}
           currentClassName="current"
@@ -70,7 +70,7 @@ const Header = () => {
           <li>
             <a href="#contact">Contact</a>
           </li>
-        </Scrollspy>
+        </Scrollspy> */}
       </div>
     </div>
   );

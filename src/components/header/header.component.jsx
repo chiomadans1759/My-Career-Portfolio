@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import { Scrollspy } from "@makotot/ghostui";
+// import { Scrollspy } from "@makotot/ghostui";
 import { ReactComponent as Logo } from "../../assets/logo.svg";
 
 const Header = (props) => {
@@ -17,7 +17,7 @@ const Header = (props) => {
   const sectionRefs = [useRef(null), useRef(null), useRef(null), useRef(null)];
   return (
     <div className="App">
-      <Scrollspy sectionRefs={sectionRefs}>
+      {/* <Scrollspy sectionRefs={sectionRefs}>
         {({ currentElementIndexInViewport }) => (
           <div>
             <div id="header" className={navbar ? "sticky" : ""}>
@@ -117,7 +117,7 @@ const Header = (props) => {
             <div ref={sectionRefs[2]}>{props.children}</div>
           </div>
         )}
-      </Scrollspy>
+      </Scrollspy> */}
     </div>
   );
 };
