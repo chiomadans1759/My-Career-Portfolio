@@ -1,6 +1,4 @@
 import React from "react";
-import salon from "../../assets/salon.png";
-import salonowner from "../../assets/salonowner.png";
 import me from "../../assets/me.jpg";
 
 const Testimonial = () => {

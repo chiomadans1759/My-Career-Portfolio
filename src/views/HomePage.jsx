@@ -1,8 +1,6 @@
 import React from "react";
-import Header from "../components/header/header.component";
 import Hero from "../components/hero/hero.component";
 import About from "../components/about/about.component";
-import Projects from "../components/projects/projects.component";
 import Testimonial from "../components/testimonial/testimonial.component";
 import Contact from "../components/contact/contact.component";
 import Footer from "../components/footer/footer.component";
@@ -16,7 +14,6 @@ const HomePage = () => {
       <a href="oluchukwuokpala1759@gmail.com" className="heroEmail">
       oluchukwuokpala1759@gmail.com
       </a>
-      <Header>
         <Hero />
         <hr />
         <About />
@@ -30,7 +27,6 @@ const HomePage = () => {
           <Testimonial />
           <Contact />
         </div>
-      </Header>
       <Footer />
     </div>
   );

@@ -9,7 +9,6 @@ import { ReactComponent as Fire } from "../../assets/fire.svg";
 import { ReactComponent as Boot } from "../../assets/boot.svg";
 import { ReactComponent as Figma } from "../../assets/figma.svg";
 import { ReactComponent as Git } from "../../assets/git.svg";
-import { ReactComponent as Gulp } from "../../assets/gulp.svg";
 import { ReactComponent as Post } from "../../assets/post.svg";
 
 const About = () => {
