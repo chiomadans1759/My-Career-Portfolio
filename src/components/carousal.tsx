@@ -1,5 +1,7 @@
 import React, { FC } from "react";
 import Carousel from "react-multi-carousel";
+import { ImagesWrapper, CarouselWrapper } from "../components/styles/about"
+import "react-multi-carousel/lib/styles.css";
 
 const responsive = {
   desktop: {
@@ -35,18 +37,26 @@ const images = [
 
 // Because this is an inframe, so the SSR mode doesn't not do well here.
 // It will work on real devices.
-export const CarousalSlider: FC<{ deviceType?: string }> = ({ deviceType }) => {
+export const CarousalSlider = () => {
   return (
-    <Carousel
-      ssr
-      partialVisbile
-      deviceType={deviceType}
-      itemClass="image-item"
-      responsive={responsive}
-    >
-      {images.slice(0, 5).map((image) => {
-        return <img src={image} />;
-      })}
-    </Carousel>
+    <CarouselWrapper>
+      <Carousel
+        responsive={responsive}
+        autoPlay={true}
+        swipeable={true}
+        draggable={true}
+        showDots={true}
+        infinite={true}
+        dotListClass="custom-dot-list-style"
+      >
+        {images.map((imageUrl, index) => {
+          return (
+            <div className="slider" key={index}>
+              <img src={imageUrl} alt="movie" />
+            </div>
+          );
+        })}
+      </Carousel>
+    </CarouselWrapper>
   );
 };

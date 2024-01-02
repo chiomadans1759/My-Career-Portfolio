@@ -18,3 +18,12 @@ export const AboutMe = styled.h2`
 export const AboutPageWrapper = styled.div`
   width: 100%;
 `;
+
+export const ImagesWrapper = styled.div`
+  display: flex;
+`;
+
+export const CarouselWrapper = styled.div`
+  display: flex;
+  width: 100%;
+`;

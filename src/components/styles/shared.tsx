@@ -7,10 +7,7 @@ export const ContentWrapper = styled.div`
 `;
 
 export const ComponentWrapper = styled.div`
-  display: flex;
   width: 100%;
-  justify-content: center;
-  align-items: center;
   max-width: 1040px;
   margin: 60px auto 0;
   box-sizing: border-box;
