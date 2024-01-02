@@ -1,25 +1,30 @@
-import React from "react";
+import React from 'react'
+import styles from './hero.module.css'
 
 const Hero = () => {
   return (
-    <div id="hero">
-      <h3>Okpala Oluchukwu Chioma </h3>
-      <h1>&lt; Frontend Engineer /&gt;</h1>
-      <p>
-        I design and build quality responsive websites, clean user interaces,
-        and rich interactive web apps. I am seeking React, Javascript, and other
-        web development opportunities.
-      </p>
-      <p>
-        Open to remote freelance opportunities, contract jobs, and full time
-        work. I like to learn new things, solve problems, and create innovative
-        web solutions.
-      </p>
-      <a href="#projects" className="heroBTN">
-        See my work
-      </a>
+    <div className={styles.heroContainer}>
+      <div className={styles.heroContactsContainer}>
+        <span>Icon</span>
+        <span>Icon</span>
+        <span>Icon</span>
+        <span>Icon</span>
+      </div>
+      <div className={styles.heroMainContainer}>
+        <div className={styles.heroMainText}>
+          <h3>HI, MY NAME IS</h3>
+        </div>
+        <div className={styles.heroButtonsContainer}>
+          <div className={styles.heroButton}>
+            <span>View Portfolio</span>
+          </div>
+          <div className={styles.heroButton}>
+            <span>Get in Touch</span>
+          </div>
+        </div>
+      </div>
     </div>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero
