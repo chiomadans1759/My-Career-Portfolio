@@ -11,12 +11,26 @@ export const NameBanner = styled.h2`
 `;
 
 export const AboutMe = styled.h2`
+  max-width: 950px;
+  text-align: center;
   font-size: 20px;
-  color: #fff;
+  color: #88898c;
+  margin-top: 32px;
 `;
 
 export const AboutPageWrapper = styled.div`
   width: 100%;
+  margin-bottom: 32px;
+`;
+
+export const AboutContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-bottom: 32px;
 `;
 
 export const ImagesWrapper = styled.div`

@@ -1,5 +1,13 @@
 import React, { FC } from "react";
-import { SectionTitleWrapper, NameIntro, BaseText } from "../styles/shared"
+import {
+  SectionTitleWrapper,
+  NameIntro,
+  BaseText,
+  Statisticscontainer,
+  SummaryNumber,
+  SummaryText,
+  SummaryTitle,
+} from "../styles/shared";
 
 interface SectionTitleProps {
   baseText: string;
@@ -21,12 +29,16 @@ export const SectionTitle: FC<SectionTitleProps> = ({ baseText, title }) => {
   );
 };
 
-export const SummaryCard: FC<SummaryCardProps> = ({ heading, subHeading, desc }) => {
+export const SummaryCard: FC<SummaryCardProps> = ({
+  heading,
+  subHeading,
+  desc,
+}) => {
   return (
-    <SectionTitleWrapper>
-      <NameIntro>{heading}</NameIntro>
-      <BaseText>{subHeading}</BaseText>
-      <BaseText>{desc}</BaseText>
-    </SectionTitleWrapper>
+    <Statisticscontainer>
+      <SummaryNumber>{heading}</SummaryNumber>
+      <SummaryTitle>{subHeading}</SummaryTitle>
+      <SummaryText>{desc}</SummaryText>
+    </Statisticscontainer>
   );
 };

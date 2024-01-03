@@ -3,10 +3,10 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { SectionTitle } from "./shared";
 import {
-  CarouselPageWrapper,
-  CarouselContainer,
-  CarouselImage,
-} from "./styles/carousel";
+  TestimonialPageWrapper,
+  TestimonialContainer,
+  TestimonialImage,
+} from "./styles/testimonials";
 import { ActionButton } from "./styles/shared";
 
 const responsive = {
@@ -44,24 +44,27 @@ const images = [
 
 // Because this is an inframe, so the SSR mode doesn't not do well here.
 // It will work on real devices.
-export const CarousalSlider = () => {
+export const TestimonialSlider: FC<{ deviceType?: string }> = ({
+  deviceType,
+}) => {
   return (
-    <CarouselPageWrapper>
-      <SectionTitle baseText="Portfolio" title="Poster Designing" />
-      <CarouselContainer>
+    <TestimonialPageWrapper>
+      <SectionTitle baseText="Testimonials" title="What clients says" />
+      <TestimonialContainer>
         <Carousel
           ssr
           partialVisbile
+          deviceType={deviceType}
           itemClass="image-item"
           responsive={responsive}
           infinite={true}
         >
           {images.slice(0, 5).map((image) => {
-            return <CarouselImage src={image} />;
+            return <TestimonialImage src={image} />;
           })}
         </Carousel>
-      </CarouselContainer>
+      </TestimonialContainer>
       <ActionButton>Check all UI/UX Design</ActionButton>
-    </CarouselPageWrapper>
+    </TestimonialPageWrapper>
   );
 };
