@@ -5,7 +5,8 @@ import {
   NavLink,
   HeaderItem,
   NavWrapper,
-  HeaderImage
+  HeaderImage,
+  HeaderButton,
 } from "./styles/header";
 
 export const Header: FC = () => {
@@ -18,21 +19,35 @@ export const Header: FC = () => {
     <NavWrapper>
       <HeaderImage src={HeaderIcon} alt="" />
       <HeaderNav>
-        <HeaderItem isActive={activeLink === 'home'} onClick={() => handleNavigation("home")}>
+        <HeaderItem
+          isActive={activeLink === "home"}
+          onClick={() => handleNavigation("home")}
+        >
           <NavLink href="#home">Home</NavLink>
         </HeaderItem>
-        <HeaderItem isActive={activeLink === 'about'} onClick={() => handleNavigation("students")}>
+        <HeaderItem
+          isActive={activeLink === "about"}
+          onClick={() => handleNavigation("students")}
+        >
           <NavLink href="#about">About Me</NavLink>
         </HeaderItem>
-        <HeaderItem isActive={activeLink === 'portfolio'} onClick={() => handleNavigation("students")}>
+        <HeaderItem
+          isActive={activeLink === "portfolio"}
+          onClick={() => handleNavigation("students")}
+        >
           <NavLink href="#portfolio">Portfolio</NavLink>
         </HeaderItem>
-        <HeaderItem isActive={activeLink === 'contact'} onClick={() => handleNavigation("students")}>
+        <HeaderItem
+          isActive={activeLink === "contact"}
+          onClick={() => handleNavigation("students")}
+        >
           <NavLink href="#contact">Contact Me</NavLink>
         </HeaderItem>
-        <HeaderItem isActive={activeLink === 'hire'} onClick={() => handleNavigation("students")}>
-          <NavLink href="#hire">Hire Me</NavLink>
-        </HeaderItem>
+        <HeaderButton
+          onClick={() => handleNavigation("students")}
+        >
+          Hire Me
+        </HeaderButton>
       </HeaderNav>
     </NavWrapper>
   );
