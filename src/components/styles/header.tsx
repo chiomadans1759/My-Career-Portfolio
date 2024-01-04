@@ -63,7 +63,7 @@ export const HeaderItem = styled.span<{ isActive: boolean }>`
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     &:hover {
-      background-image: linear-gradient(45deg, #f3ec78, #af4261);
+      background-image: linear-gradient(45deg, #a9e4ff, #fd9996);
     }
   }
   ${(props) =>
@@ -81,7 +81,7 @@ export const HeaderButton = styled.div`
   width: 158px;
   height: 49px;
   border-radius: 8px;
-  background: linear-gradient(#e66465, #9198e5);
+  background: linear-gradient(#a9e4ff, #fd9996);
   color: #000;
   cursor: pointer;
   border: 1px solid linear-gradient(#e66465, #9198e5);

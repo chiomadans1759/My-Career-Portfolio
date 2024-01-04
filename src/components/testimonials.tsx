@@ -5,7 +5,14 @@ import { SectionTitle } from "./shared";
 import {
   TestimonialPageWrapper,
   TestimonialContainer,
-  TestimonialImage,
+  Testimonial,
+  ClientContainer,
+  Client,
+  ClientImage,
+  ClientDetailsContainer,
+  ClientText,
+  ClientName,
+  ClientOccupation,
 } from "./styles/testimonials";
 import { ActionButton } from "./styles/shared";
 
@@ -60,11 +67,36 @@ export const TestimonialSlider: FC<{ deviceType?: string }> = ({
           infinite={true}
         >
           {images.slice(0, 5).map((image) => {
-            return <TestimonialImage src={image} />;
+            return (
+              <Testimonial>
+                <ClientText>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book. It has survived not only five centuries, but
+                  also the leap into electronic typesetting, remaining
+                  essentially unchanged. It was popularised in the 1960s with
+                  the release of Letraset sheets containing Lorem Ipsum
+                  passages, and more recently with desktop publishing software
+                  like Aldus PageMaker including versions of Lorem Ipsum.
+                </ClientText>
+                <ClientContainer>
+                  <Client>
+                    <ClientImage />
+                    <ClientDetailsContainer>
+                      <ClientName>Nina Fort</ClientName>
+                      <ClientOccupation>Marketing Manager</ClientOccupation>
+                    </ClientDetailsContainer>
+                  </Client>
+                  <div>**********</div>
+                </ClientContainer>
+              </Testimonial>
+            );
           })}
         </Carousel>
       </TestimonialContainer>
-      <ActionButton>Check all UI/UX Design</ActionButton>
+      <ActionButton>Drop your review</ActionButton>
     </TestimonialPageWrapper>
   );
 };

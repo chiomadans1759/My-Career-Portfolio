@@ -16,6 +16,7 @@ export const AboutMe = styled.h2`
   font-size: 20px;
   color: #88898c;
   margin-top: 32px;
+  font-family: 'Mono Sans'
 `;
 
 export const AboutPageWrapper = styled.div`
@@ -31,6 +32,8 @@ export const AboutContainer = styled.div`
   margin-left: 70px;
   margin-right: 70px;
   margin-bottom: 32px;
+  margin-left: 70px;
+  margin-right: 70px;
 `;
 
 export const ImagesWrapper = styled.div`

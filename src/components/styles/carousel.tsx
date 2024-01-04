@@ -6,6 +6,7 @@ export const CarouselPageWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 200px
 `;
 
 export const CarouselContainer = styled.div`
@@ -15,7 +16,7 @@ export const CarouselContainer = styled.div`
 `;
 
 export const CarouselImage = styled.img`
-  width: 375px;
+  width: 423px;
   height: 375px;
-  border-radius: 8px
+  border-radius: 8px;
 `;

@@ -29,11 +29,9 @@ export const HomePageWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 100px
 `;
 
 export const MeContainer = styled.div`
-  width: 100%;
   display: flex;
   align-items: center;
   gap: 90px;
