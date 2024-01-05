@@ -81,8 +81,8 @@ export const ActionButton = styled.button`
 `;
 
 export const StatisticsDivider = styled.hr`
-  background-color: #fff;
-  color: #fff;
+  background-color: #8a8494;
+  color: #8a8494;
   -webkit-transform: rotate(90deg);
   left: 130px;
   border: 2px;
