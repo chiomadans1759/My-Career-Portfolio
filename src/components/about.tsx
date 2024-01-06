@@ -38,7 +38,7 @@ export const About: FC = () => {
   return (
     <ComponentWrapper>
       <AboutContainer>
-        <SectionTitle baseText="About Me" title="who am i?" />
+        <SectionTitle id='about' baseText="About Me" title="who am i?" />
         <AboutMe>{aboutMe}</AboutMe>
         <SummarySection>
           {summary.map((sum, idx) => (

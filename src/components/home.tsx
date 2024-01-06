@@ -13,7 +13,11 @@ export const Home: FC = () => {
   return (
     <ComponentWrapper>
       <HomePageWrapper>
-        <SectionTitle baseText="Frontend Engineer" title="Hi, My Name Is" />
+        <SectionTitle
+          id="home"
+          baseText="Frontend Engineer"
+          title="Hi, My Name Is"
+        />
         <NameBanner>OLUCHI OKPALA</NameBanner>
         <MeContainer>
           <ActionButton>View Portfolio</ActionButton>

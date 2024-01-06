@@ -12,6 +12,7 @@ import {
 interface SectionTitleProps {
   baseText: string;
   title: string;
+  id: string;
 }
 
 interface SummaryCardProps {
@@ -20,11 +21,15 @@ interface SummaryCardProps {
   desc: string;
 }
 
-export const SectionTitle: FC<SectionTitleProps> = ({ baseText, title }) => {
+export const SectionTitle: FC<SectionTitleProps> = ({
+  baseText,
+  title,
+  id,
+}) => {
   return (
     <SectionTitleWrapper>
       <NameIntro>{title}</NameIntro>
-      <BaseText>{baseText}</BaseText>
+      <BaseText id={id}>{baseText}</BaseText>
     </SectionTitleWrapper>
   );
 };

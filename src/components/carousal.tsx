@@ -47,7 +47,11 @@ const images = [
 export const CarousalSlider = () => {
   return (
     <CarouselPageWrapper>
-      <SectionTitle baseText="Portfolio" title="Poster Designing" />
+      <SectionTitle
+        id="portfolio"
+        baseText="Portfolio"
+        title="Poster Designing"
+      />
       <CarouselContainer>
         <Carousel
           ssr

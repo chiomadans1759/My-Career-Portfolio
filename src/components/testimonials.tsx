@@ -56,7 +56,11 @@ export const TestimonialSlider: FC<{ deviceType?: string }> = ({
 }) => {
   return (
     <TestimonialPageWrapper>
-      <SectionTitle baseText="Testimonials" title="What clients says" />
+      <SectionTitle
+        id="testimonial"
+        baseText="Testimonials"
+        title="What clients says"
+      />
       <TestimonialContainer>
         <Carousel
           ssr

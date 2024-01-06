@@ -39,7 +39,11 @@ export const FAQ = () => {
   const [activeFaq, setAtiveFaq] = useState(1);
   return (
     <FaqPageWrapper>
-      <SectionTitle baseText="F.A.Q" title="Frequently Asked Questions" />
+      <SectionTitle
+        id="faq"
+        baseText="F.A.Q"
+        title="Frequently Asked Questions"
+      />
       <FaqContainer>
         {faqs.map((faq, index) =>
           activeFaq === index ? (

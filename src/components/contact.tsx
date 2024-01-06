@@ -16,7 +16,7 @@ export const Contact = () => {
   const [activeFaq, setAtiveFaq] = useState(1);
   return (
     <ContactPageWrapper>
-      <SectionTitle baseText="CONTACT ME" title="Send me email" />
+      <SectionTitle id="contact" baseText="CONTACT ME" title="Send me email" />
       <ContactContainer>
         <ContactFirstSections>
           <ContactInput name="firstName" placeholder="First Name" />
